@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.everquint.booking.controller.IntegrationTest" time="14.177" tests="13" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/madhusriram/Desktop/ever-quint-assignment/meeting-room-booking/target/test-classes:/Users/madhusriram/Desktop/ever-quint-assignment/meeting-room-booking/target/classes:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.5/spring-boot-starter-web-3.2.5.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.5/spring-boot-starter-3.2.5.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot/3.2.5/spring-boot-3.2.5.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.5/spring-boot-autoconfigure-3.2.5.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.5/spring-boot-starter-logging-3.2.5.jar:/Users/madhusriram/.m2/repository/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.jar:/Users/madhusriram/.m2/repository/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.jar:/Users/madhusriram/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar:/Users/madhusriram/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/Users/madhusriram/.m2/repository/org/slf4j/jul-to-slf4j/2.0.13/jul-to-slf4j-2.0.13.jar:/Users/madhusriram/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/madhusriram/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.5/spring-boot-starter-json-3.2.5.jar:/Users/madhusriram/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.4/jackson-databind-2.15.4.jar:/Users/madhusriram/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.4/jackson-annotations-2.15.4.jar:/Users/madhusriram/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.4/jackson-core-2.15.4.jar:/Users/madhusriram/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.4/jackson-datatype-jdk8-2.15.4.jar:/Users/madhusriram/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.4/jackson-datatype-jsr310-2.15.4.jar:/Users/madhusriram/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.4/jackson-module-parameter-names-2.15.4.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.5/spring-boot-starter-tomcat-3.2.5.jar:/Users/madhusriram/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.20/tomcat-embed-core-10.1.20.jar:/Users/madhusriram/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.20/tomcat-embed-websocket-10.1.20.jar:/Users/madhusriram/.m2/repository/org/springframework/spring-web/6.1.6/spring-web-6.1.6.jar:/Users/madhusriram/.m2/repository/org/springframework/spring-beans/6.1.6/spring-beans-6.1.6.jar:/Users/madhusriram/.m2/repository/org/springframework/spring-webmvc/6.1.6/spring-webmvc-6.1.6.jar:/Users/madhusriram/.m2/repository/org/springframework/spring-aop/6.1.6/spring-aop-6.1.6.jar:/Users/madhusriram/.m2/repository/org/springframework/spring-context/6.1.6/spring-context-6.1.6.jar:/Users/madhusriram/.m2/repository/org/springframework/spring-expression/6.1.6/spring-expression-6.1.6.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.2.5/spring-boot-starter-data-jpa-3.2.5.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.2.5/spring-boot-starter-aop-3.2.5.jar:/Users/madhusriram/.m2/repository/org/aspectj/aspectjweaver/1.9.22/aspectjweaver-1.9.22.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.2.5/spring-boot-starter-jdbc-3.2.5.jar:/Users/madhusriram/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/Users/madhusriram/.m2/repository/org/springframework/spring-jdbc/6.1.6/spring-jdbc-6.1.6.jar:/Users/madhusriram/.m2/repository/org/hibernate/orm/hibernate-core/6.4.4.Final/hibernate-core-6.4.4.Final.jar:/Users/madhusriram/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/Users/madhusriram/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/Users/madhusriram/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/Users/madhusriram/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/Users/madhusriram/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/Users/madhusriram/.m2/repository/com/fasterxml/classmate/1.6.0/classmate-1.6.0.jar:/Users/madhusriram/.m2/repository/net/bytebuddy/byte-buddy/1.14.13/byte-buddy-1.14.13.jar:/Users/madhusriram/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.5/jaxb-runtime-4.0.5.jar:/Users/madhusriram/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.5/jaxb-core-4.0.5.jar:/Users/madhusriram/.m2/repository/org/eclipse/angus/angus-activation/2.0.2/angus-activation-2.0.2.jar:/Users/madhusriram/.m2/repository/org/glassfish/jaxb/txw2/4.0.5/txw2-4.0.5.jar:/Users/madhusriram/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/Users/madhusriram/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/Users/madhusriram/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/Users/madhusriram/.m2/repository/org/springframework/data/spring-data-jpa/3.2.5/spring-data-jpa-3.2.5.jar:/Users/madhusriram/.m2/repository/org/springframework/data/spring-data-commons/3.2.5/spring-data-commons-3.2.5.jar:/Users/madhusriram/.m2/repository/org/springframework/spring-orm/6.1.6/spring-orm-6.1.6.jar:/Users/madhusriram/.m2/repository/org/springframework/spring-tx/6.1.6/spring-tx-6.1.6.jar:/Users/madhusriram/.m2/repository/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar:/Users/madhusriram/.m2/repository/org/springframework/spring-aspects/6.1.6/spring-aspects-6.1.6.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.2.5/spring-boot-starter-validation-3.2.5.jar:/Users/madhusriram/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.20/tomcat-embed-el-10.1.20.jar:/Users/madhusriram/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar:/Users/madhusriram/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/Users/madhusriram/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar:/Users/madhusriram/.m2/repository/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.5/spring-boot-starter-test-3.2.5.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-test/3.2.5/spring-boot-test-3.2.5.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.5/spring-boot-test-autoconfigure-3.2.5.jar:/Users/madhusriram/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/madhusriram/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/madhusriram/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/madhusriram/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/madhusriram/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/madhusriram/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/madhusriram/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/Users/madhusriram/.m2/repository/org/awaitility/awaitility/4.2.1/awaitility-4.2.1.jar:/Users/madhusriram/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/madhusriram/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/madhusriram/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/madhusriram/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/madhusriram/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/madhusriram/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/madhusriram/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/madhusriram/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/madhusriram/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/madhusriram/.m2/repository/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar:/Users/madhusriram/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.13/byte-buddy-agent-1.14.13.jar:/Users/madhusriram/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/madhusriram/.m2/repository/org/mockito/mockito-junit-jupiter/5.7.0/mockito-junit-jupiter-5.7.0.jar:/Users/madhusriram/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/Users/madhusriram/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/madhusriram/.m2/repository/org/springframework/spring-core/6.1.6/spring-core-6.1.6.jar:/Users/madhusriram/.m2/repository/org/springframework/spring-jcl/6.1.6/spring-jcl-6.1.6.jar:/Users/madhusriram/.m2/repository/org/springframework/spring-test/6.1.6/spring-test-6.1.6.jar:/Users/madhusriram/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-starter-actuator/3.2.5/spring-boot-starter-actuator-3.2.5.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-actuator-autoconfigure/3.2.5/spring-boot-actuator-autoconfigure-3.2.5.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-actuator/3.2.5/spring-boot-actuator-3.2.5.jar:/Users/madhusriram/.m2/repository/io/micrometer/micrometer-observation/1.12.5/micrometer-observation-1.12.5.jar:/Users/madhusriram/.m2/repository/io/micrometer/micrometer-commons/1.12.5/micrometer-commons-1.12.5.jar:/Users/madhusriram/.m2/repository/io/micrometer/micrometer-jakarta9/1.12.5/micrometer-jakarta9-1.12.5.jar:/Users/madhusriram/.m2/repository/io/micrometer/micrometer-core/1.12.5/micrometer-core-1.12.5.jar:/Users/madhusriram/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar:/Users/madhusriram/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/madhusriram/Desktop/ever-quint-assignment/meeting-room-booking/target/surefire/surefirebooter-20260422155059156_3.jar /Users/madhusriram/Desktop/ever-quint-assignment/meeting-room-booking/target/surefire 2026-04-22T15-50-59_048-jvmRun1 surefire-20260422155059156_1tmp surefire_0-20260422155059156_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/madhusriram/Desktop/ever-quint-assignment/meeting-room-booking/target/test-classes:/Users/madhusriram/Desktop/ever-quint-assignment/meeting-room-booking/target/classes:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.5/spring-boot-starter-web-3.2.5.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.5/spring-boot-starter-3.2.5.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot/3.2.5/spring-boot-3.2.5.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.5/spring-boot-autoconfigure-3.2.5.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.5/spring-boot-starter-logging-3.2.5.jar:/Users/madhusriram/.m2/repository/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.jar:/Users/madhusriram/.m2/repository/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.jar:/Users/madhusriram/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar:/Users/madhusriram/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/Users/madhusriram/.m2/repository/org/slf4j/jul-to-slf4j/2.0.13/jul-to-slf4j-2.0.13.jar:/Users/madhusriram/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/madhusriram/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.5/spring-boot-starter-json-3.2.5.jar:/Users/madhusriram/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.4/jackson-databind-2.15.4.jar:/Users/madhusriram/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.4/jackson-annotations-2.15.4.jar:/Users/madhusriram/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.4/jackson-core-2.15.4.jar:/Users/madhusriram/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.4/jackson-datatype-jdk8-2.15.4.jar:/Users/madhusriram/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.4/jackson-datatype-jsr310-2.15.4.jar:/Users/madhusriram/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.4/jackson-module-parameter-names-2.15.4.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.5/spring-boot-starter-tomcat-3.2.5.jar:/Users/madhusriram/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.20/tomcat-embed-core-10.1.20.jar:/Users/madhusriram/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.20/tomcat-embed-websocket-10.1.20.jar:/Users/madhusriram/.m2/repository/org/springframework/spring-web/6.1.6/spring-web-6.1.6.jar:/Users/madhusriram/.m2/repository/org/springframework/spring-beans/6.1.6/spring-beans-6.1.6.jar:/Users/madhusriram/.m2/repository/org/springframework/spring-webmvc/6.1.6/spring-webmvc-6.1.6.jar:/Users/madhusriram/.m2/repository/org/springframework/spring-aop/6.1.6/spring-aop-6.1.6.jar:/Users/madhusriram/.m2/repository/org/springframework/spring-context/6.1.6/spring-context-6.1.6.jar:/Users/madhusriram/.m2/repository/org/springframework/spring-expression/6.1.6/spring-expression-6.1.6.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.2.5/spring-boot-starter-data-jpa-3.2.5.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.2.5/spring-boot-starter-aop-3.2.5.jar:/Users/madhusriram/.m2/repository/org/aspectj/aspectjweaver/1.9.22/aspectjweaver-1.9.22.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.2.5/spring-boot-starter-jdbc-3.2.5.jar:/Users/madhusriram/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/Users/madhusriram/.m2/repository/org/springframework/spring-jdbc/6.1.6/spring-jdbc-6.1.6.jar:/Users/madhusriram/.m2/repository/org/hibernate/orm/hibernate-core/6.4.4.Final/hibernate-core-6.4.4.Final.jar:/Users/madhusriram/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/Users/madhusriram/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/Users/madhusriram/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/Users/madhusriram/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/Users/madhusriram/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/Users/madhusriram/.m2/repository/com/fasterxml/classmate/1.6.0/classmate-1.6.0.jar:/Users/madhusriram/.m2/repository/net/bytebuddy/byte-buddy/1.14.13/byte-buddy-1.14.13.jar:/Users/madhusriram/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.5/jaxb-runtime-4.0.5.jar:/Users/madhusriram/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.5/jaxb-core-4.0.5.jar:/Users/madhusriram/.m2/repository/org/eclipse/angus/angus-activation/2.0.2/angus-activation-2.0.2.jar:/Users/madhusriram/.m2/repository/org/glassfish/jaxb/txw2/4.0.5/txw2-4.0.5.jar:/Users/madhusriram/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/Users/madhusriram/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/Users/madhusriram/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/Users/madhusriram/.m2/repository/org/springframework/data/spring-data-jpa/3.2.5/spring-data-jpa-3.2.5.jar:/Users/madhusriram/.m2/repository/org/springframework/data/spring-data-commons/3.2.5/spring-data-commons-3.2.5.jar:/Users/madhusriram/.m2/repository/org/springframework/spring-orm/6.1.6/spring-orm-6.1.6.jar:/Users/madhusriram/.m2/repository/org/springframework/spring-tx/6.1.6/spring-tx-6.1.6.jar:/Users/madhusriram/.m2/repository/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar:/Users/madhusriram/.m2/repository/org/springframework/spring-aspects/6.1.6/spring-aspects-6.1.6.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.2.5/spring-boot-starter-validation-3.2.5.jar:/Users/madhusriram/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.20/tomcat-embed-el-10.1.20.jar:/Users/madhusriram/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar:/Users/madhusriram/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/Users/madhusriram/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar:/Users/madhusriram/.m2/repository/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.5/spring-boot-starter-test-3.2.5.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-test/3.2.5/spring-boot-test-3.2.5.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.5/spring-boot-test-autoconfigure-3.2.5.jar:/Users/madhusriram/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/madhusriram/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/madhusriram/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/madhusriram/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/madhusriram/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/madhusriram/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/madhusriram/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/Users/madhusriram/.m2/repository/org/awaitility/awaitility/4.2.1/awaitility-4.2.1.jar:/Users/madhusriram/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/madhusriram/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/madhusriram/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/madhusriram/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/madhusriram/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/madhusriram/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/madhusriram/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/madhusriram/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/madhusriram/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/madhusriram/.m2/repository/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar:/Users/madhusriram/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.13/byte-buddy-agent-1.14.13.jar:/Users/madhusriram/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/madhusriram/.m2/repository/org/mockito/mockito-junit-jupiter/5.7.0/mockito-junit-jupiter-5.7.0.jar:/Users/madhusriram/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/Users/madhusriram/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/madhusriram/.m2/repository/org/springframework/spring-core/6.1.6/spring-core-6.1.6.jar:/Users/madhusriram/.m2/repository/org/springframework/spring-jcl/6.1.6/spring-jcl-6.1.6.jar:/Users/madhusriram/.m2/repository/org/springframework/spring-test/6.1.6/spring-test-6.1.6.jar:/Users/madhusriram/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-starter-actuator/3.2.5/spring-boot-starter-actuator-3.2.5.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-actuator-autoconfigure/3.2.5/spring-boot-actuator-autoconfigure-3.2.5.jar:/Users/madhusriram/.m2/repository/org/springframework/boot/spring-boot-actuator/3.2.5/spring-boot-actuator-3.2.5.jar:/Users/madhusriram/.m2/repository/io/micrometer/micrometer-observation/1.12.5/micrometer-observation-1.12.5.jar:/Users/madhusriram/.m2/repository/io/micrometer/micrometer-commons/1.12.5/micrometer-commons-1.12.5.jar:/Users/madhusriram/.m2/repository/io/micrometer/micrometer-jakarta9/1.12.5/micrometer-jakarta9-1.12.5.jar:/Users/madhusriram/.m2/repository/io/micrometer/micrometer-core/1.12.5/micrometer-core-1.12.5.jar:/Users/madhusriram/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar:/Users/madhusriram/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/madhusriram"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/madhusriram/Desktop/ever-quint-assignment/meeting-room-booking"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/madhusriram/Desktop/ever-quint-assignment/meeting-room-booking/target/surefire/surefirebooter-20260422155059156_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.4+8-LTS-274"/>
+    <property name="user.name" value="madhusriram"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="26.3.1"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="maven.ext.class.path" value="/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/intellij.maven.rt/maven-event-listener.jar"/>
+    <property name="localRepository" value="/Users/madhusriram/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/n5/qbrxpyds531glbzhb2fh9vrh0000gn/T/"/>
+    <property name="idea.version" value="2026.1"/>
+    <property name="com.zaxxer.hikari.pool_number" value="13"/>
+    <property name="java.version" value="21.0.4"/>
+    <property name="user.dir" value="/Users/madhusriram/Desktop/ever-quint-assignment/meeting-room-booking"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="jansi.passthrough" value="true"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="56324"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/madhusriram/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.4+8-LTS-274"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="maven.repo.local" value="/Users/madhusriram/.m2/repository"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="idempotentBooking" classname="com.everquint.booking.controller.IntegrationTest" time="0.773">
+    <system-out><![CDATA[15:51:00.062 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.everquint.booking.controller.IntegrationTest]: IntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:51:00.155 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.everquint.booking.MeetingRoomBookingApplication for test class com.everquint.booking.controller.IntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-04-22T15:51:00.441+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : Starting IntegrationTest using Java 21.0.4 with PID 56324 (started by madhusriram in /Users/madhusriram/Desktop/ever-quint-assignment/meeting-room-booking)
+2026-04-22T15:51:00.442+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : No active profile set, falling back to 1 default profile: "default"
+2026-04-22T15:51:01.234+05:30  INFO 56324 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-22T15:51:01.273+05:30  INFO 56324 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 3 JPA repository interfaces.
+2026-04-22T15:51:01.855+05:30  INFO 56324 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-22T15:51:01.916+05:30  INFO 56324 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-04-22T15:51:01.949+05:30  INFO 56324 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-22T15:51:02.144+05:30  INFO 56324 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-22T15:51:02.164+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-22T15:51:02.305+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-04-22T15:51:02.306+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-22T15:51:03.228+05:30  INFO 56324 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-22T15:51:03.275+05:30  INFO 56324 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T15:51:03.503+05:30  INFO 56324 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-22T15:51:04.231+05:30  WARN 56324 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-22T15:51:04.796+05:30  INFO 56324 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-04-22T15:51:04.796+05:30  INFO 56324 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-04-22T15:51:04.804+05:30  INFO 56324 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-04-22T15:51:04.817+05:30  INFO 56324 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 20 ms
+2026-04-22T15:51:04.872+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : Started IntegrationTest in 4.624 seconds (process running for 5.597)
+2026-04-22T15:51:05.714+05:30  INFO 56324 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T15:51:05.720+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-22T15:51:05.722+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+]]></system-out>
+    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/Users/madhusriram/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.13/byte-buddy-agent-1.14.13.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+  <testcase name="filterByAmenity" classname="com.everquint.booking.controller.IntegrationTest" time="0.061">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-04-22T15:51:05.744+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : Starting IntegrationTest using Java 21.0.4 with PID 56324 (started by madhusriram in /Users/madhusriram/Desktop/ever-quint-assignment/meeting-room-booking)
+2026-04-22T15:51:05.744+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : No active profile set, falling back to 1 default profile: "default"
+2026-04-22T15:51:05.899+05:30  INFO 56324 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-22T15:51:05.906+05:30  INFO 56324 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 3 JPA repository interfaces.
+2026-04-22T15:51:05.989+05:30  INFO 56324 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-22T15:51:05.990+05:30  INFO 56324 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-22T15:51:05.993+05:30  INFO 56324 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-22T15:51:05.994+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-04-22T15:51:05.994+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+2026-04-22T15:51:05.995+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-04-22T15:51:06.060+05:30  INFO 56324 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-22T15:51:06.066+05:30  INFO 56324 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T15:51:06.215+05:30  WARN 56324 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-22T15:51:06.539+05:30  INFO 56324 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-04-22T15:51:06.539+05:30  INFO 56324 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-04-22T15:51:06.543+05:30  INFO 56324 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-04-22T15:51:06.550+05:30  INFO 56324 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 11 ms
+2026-04-22T15:51:06.564+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : Started IntegrationTest in 0.837 seconds (process running for 7.289)
+2026-04-22T15:51:06.623+05:30  INFO 56324 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T15:51:06.626+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-04-22T15:51:06.627+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="duplicateRoomName" classname="com.everquint.booking.controller.IntegrationTest" time="0.035">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-04-22T15:51:06.643+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : Starting IntegrationTest using Java 21.0.4 with PID 56324 (started by madhusriram in /Users/madhusriram/Desktop/ever-quint-assignment/meeting-room-booking)
+2026-04-22T15:51:06.643+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : No active profile set, falling back to 1 default profile: "default"
+2026-04-22T15:51:06.879+05:30  INFO 56324 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-22T15:51:06.887+05:30  INFO 56324 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 3 JPA repository interfaces.
+2026-04-22T15:51:06.960+05:30  INFO 56324 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-22T15:51:06.962+05:30  INFO 56324 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-22T15:51:06.965+05:30  INFO 56324 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-22T15:51:06.965+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-04-22T15:51:06.966+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:testdb user=SA
+2026-04-22T15:51:06.966+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-04-22T15:51:07.040+05:30  INFO 56324 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-22T15:51:07.050+05:30  INFO 56324 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T15:51:07.185+05:30  WARN 56324 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-22T15:51:07.424+05:30  INFO 56324 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-04-22T15:51:07.424+05:30  INFO 56324 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-04-22T15:51:07.427+05:30  INFO 56324 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-04-22T15:51:07.435+05:30  INFO 56324 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 11 ms
+2026-04-22T15:51:07.451+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : Started IntegrationTest in 0.823 seconds (process running for 8.177)
+2026-04-22T15:51:07.485+05:30  INFO 56324 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T15:51:07.487+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-04-22T15:51:07.487+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="overlapConflict" classname="com.everquint.booking.controller.IntegrationTest" time="0.044">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-04-22T15:51:07.507+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : Starting IntegrationTest using Java 21.0.4 with PID 56324 (started by madhusriram in /Users/madhusriram/Desktop/ever-quint-assignment/meeting-room-booking)
+2026-04-22T15:51:07.507+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : No active profile set, falling back to 1 default profile: "default"
+2026-04-22T15:51:07.653+05:30  INFO 56324 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-22T15:51:07.660+05:30  INFO 56324 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 3 JPA repository interfaces.
+2026-04-22T15:51:07.748+05:30  INFO 56324 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-22T15:51:07.750+05:30  INFO 56324 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-22T15:51:07.753+05:30  INFO 56324 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-22T15:51:07.754+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-04-22T15:51:07.755+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection conn30: url=jdbc:h2:mem:testdb user=SA
+2026-04-22T15:51:07.755+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-04-22T15:51:07.812+05:30  INFO 56324 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-22T15:51:07.820+05:30  INFO 56324 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T15:51:07.934+05:30  WARN 56324 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-22T15:51:08.155+05:30  INFO 56324 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-04-22T15:51:08.155+05:30  INFO 56324 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-04-22T15:51:08.158+05:30  INFO 56324 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-04-22T15:51:08.162+05:30  INFO 56324 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 7 ms
+2026-04-22T15:51:08.175+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : Started IntegrationTest in 0.685 seconds (process running for 8.9)
+2026-04-22T15:51:08.217+05:30  INFO 56324 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T15:51:08.219+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2026-04-22T15:51:08.220+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="createBookingSuccess" classname="com.everquint.booking.controller.IntegrationTest" time="0.036">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-04-22T15:51:08.234+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : Starting IntegrationTest using Java 21.0.4 with PID 56324 (started by madhusriram in /Users/madhusriram/Desktop/ever-quint-assignment/meeting-room-booking)
+2026-04-22T15:51:08.234+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : No active profile set, falling back to 1 default profile: "default"
+2026-04-22T15:51:08.373+05:30  INFO 56324 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-22T15:51:08.386+05:30  INFO 56324 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 3 JPA repository interfaces.
+2026-04-22T15:51:08.495+05:30  INFO 56324 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-22T15:51:08.497+05:30  INFO 56324 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-22T15:51:08.500+05:30  INFO 56324 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-22T15:51:08.501+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2026-04-22T15:51:08.502+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection conn40: url=jdbc:h2:mem:testdb user=SA
+2026-04-22T15:51:08.502+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2026-04-22T15:51:08.563+05:30  INFO 56324 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-22T15:51:08.571+05:30  INFO 56324 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T15:51:08.691+05:30  WARN 56324 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-22T15:51:08.881+05:30  INFO 56324 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-04-22T15:51:08.882+05:30  INFO 56324 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-04-22T15:51:08.884+05:30  INFO 56324 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-04-22T15:51:08.889+05:30  INFO 56324 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 7 ms
+2026-04-22T15:51:08.901+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : Started IntegrationTest in 0.679 seconds (process running for 9.626)
+2026-04-22T15:51:08.935+05:30  INFO 56324 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T15:51:08.937+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2026-04-22T15:51:08.938+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="cancelSuccess" classname="com.everquint.booking.controller.IntegrationTest" time="0.05">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-04-22T15:51:08.952+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : Starting IntegrationTest using Java 21.0.4 with PID 56324 (started by madhusriram in /Users/madhusriram/Desktop/ever-quint-assignment/meeting-room-booking)
+2026-04-22T15:51:08.952+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : No active profile set, falling back to 1 default profile: "default"
+2026-04-22T15:51:09.092+05:30  INFO 56324 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-22T15:51:09.098+05:30  INFO 56324 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 3 JPA repository interfaces.
+2026-04-22T15:51:09.171+05:30  INFO 56324 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-22T15:51:09.172+05:30  INFO 56324 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-22T15:51:09.175+05:30  INFO 56324 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-22T15:51:09.176+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2026-04-22T15:51:09.176+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection conn50: url=jdbc:h2:mem:testdb user=SA
+2026-04-22T15:51:09.176+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2026-04-22T15:51:09.258+05:30  INFO 56324 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-22T15:51:09.264+05:30  INFO 56324 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T15:51:09.364+05:30  WARN 56324 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-22T15:51:09.561+05:30  INFO 56324 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-04-22T15:51:09.561+05:30  INFO 56324 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-04-22T15:51:09.564+05:30  INFO 56324 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-04-22T15:51:09.570+05:30  INFO 56324 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 9 ms
+2026-04-22T15:51:09.594+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : Started IntegrationTest in 0.655 seconds (process running for 10.32)
+2026-04-22T15:51:09.644+05:30  INFO 56324 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T15:51:09.646+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2026-04-22T15:51:09.647+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="createAndListRooms" classname="com.everquint.booking.controller.IntegrationTest" time="0.028">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-04-22T15:51:09.661+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : Starting IntegrationTest using Java 21.0.4 with PID 56324 (started by madhusriram in /Users/madhusriram/Desktop/ever-quint-assignment/meeting-room-booking)
+2026-04-22T15:51:09.662+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : No active profile set, falling back to 1 default profile: "default"
+2026-04-22T15:51:09.789+05:30  INFO 56324 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-22T15:51:09.797+05:30  INFO 56324 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 3 JPA repository interfaces.
+2026-04-22T15:51:09.862+05:30  INFO 56324 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-22T15:51:09.864+05:30  INFO 56324 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-22T15:51:09.866+05:30  INFO 56324 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-22T15:51:09.867+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2026-04-22T15:51:09.868+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection conn60: url=jdbc:h2:mem:testdb user=SA
+2026-04-22T15:51:09.868+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2026-04-22T15:51:09.914+05:30  INFO 56324 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-22T15:51:09.920+05:30  INFO 56324 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T15:51:10.031+05:30  WARN 56324 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-22T15:51:10.195+05:30  INFO 56324 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-04-22T15:51:10.195+05:30  INFO 56324 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-04-22T15:51:10.197+05:30  INFO 56324 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-04-22T15:51:10.201+05:30  INFO 56324 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 6 ms
+2026-04-22T15:51:10.213+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : Started IntegrationTest in 0.565 seconds (process running for 10.938)
+2026-04-22T15:51:10.241+05:30  INFO 56324 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T15:51:10.243+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2026-04-22T15:51:10.244+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="utilizationReport" classname="com.everquint.booking.controller.IntegrationTest" time="0.04">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-04-22T15:51:10.257+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : Starting IntegrationTest using Java 21.0.4 with PID 56324 (started by madhusriram in /Users/madhusriram/Desktop/ever-quint-assignment/meeting-room-booking)
+2026-04-22T15:51:10.257+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : No active profile set, falling back to 1 default profile: "default"
+2026-04-22T15:51:10.382+05:30  INFO 56324 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-22T15:51:10.388+05:30  INFO 56324 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 3 JPA repository interfaces.
+2026-04-22T15:51:10.487+05:30  INFO 56324 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-22T15:51:10.489+05:30  INFO 56324 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-22T15:51:10.492+05:30  INFO 56324 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-22T15:51:10.493+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2026-04-22T15:51:10.494+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection conn70: url=jdbc:h2:mem:testdb user=SA
+2026-04-22T15:51:10.494+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2026-04-22T15:51:10.554+05:30  INFO 56324 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-22T15:51:10.561+05:30  INFO 56324 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T15:51:10.677+05:30  WARN 56324 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-22T15:51:10.865+05:30  INFO 56324 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-04-22T15:51:10.865+05:30  INFO 56324 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-04-22T15:51:10.867+05:30  INFO 56324 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-04-22T15:51:10.873+05:30  INFO 56324 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 8 ms
+2026-04-22T15:51:10.883+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : Started IntegrationTest in 0.638 seconds (process running for 11.609)
+2026-04-22T15:51:10.923+05:30  INFO 56324 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T15:51:10.924+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2026-04-22T15:51:10.925+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="listBookingsPagination" classname="com.everquint.booking.controller.IntegrationTest" time="0.057">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-04-22T15:51:10.937+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : Starting IntegrationTest using Java 21.0.4 with PID 56324 (started by madhusriram in /Users/madhusriram/Desktop/ever-quint-assignment/meeting-room-booking)
+2026-04-22T15:51:10.937+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : No active profile set, falling back to 1 default profile: "default"
+2026-04-22T15:51:11.175+05:30  INFO 56324 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-22T15:51:11.185+05:30  INFO 56324 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+2026-04-22T15:51:11.243+05:30  INFO 56324 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-22T15:51:11.246+05:30  INFO 56324 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-22T15:51:11.249+05:30  INFO 56324 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-22T15:51:11.250+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2026-04-22T15:51:11.251+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection conn80: url=jdbc:h2:mem:testdb user=SA
+2026-04-22T15:51:11.251+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2026-04-22T15:51:11.299+05:30  INFO 56324 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-22T15:51:11.305+05:30  INFO 56324 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T15:51:11.447+05:30  WARN 56324 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-22T15:51:11.643+05:30  INFO 56324 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-04-22T15:51:11.643+05:30  INFO 56324 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-04-22T15:51:11.645+05:30  INFO 56324 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-04-22T15:51:11.649+05:30  INFO 56324 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 6 ms
+2026-04-22T15:51:11.659+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : Started IntegrationTest in 0.733 seconds (process running for 12.384)
+2026-04-22T15:51:11.716+05:30  INFO 56324 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T15:51:11.717+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2026-04-22T15:51:11.718+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="cancelledDoesNotBlock" classname="com.everquint.booking.controller.IntegrationTest" time="0.057">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-04-22T15:51:11.732+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : Starting IntegrationTest using Java 21.0.4 with PID 56324 (started by madhusriram in /Users/madhusriram/Desktop/ever-quint-assignment/meeting-room-booking)
+2026-04-22T15:51:11.732+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : No active profile set, falling back to 1 default profile: "default"
+2026-04-22T15:51:11.892+05:30  INFO 56324 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-22T15:51:11.901+05:30  INFO 56324 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 3 JPA repository interfaces.
+2026-04-22T15:51:11.972+05:30  INFO 56324 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-22T15:51:11.973+05:30  INFO 56324 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-22T15:51:11.977+05:30  INFO 56324 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-22T15:51:11.977+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2026-04-22T15:51:11.978+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection conn90: url=jdbc:h2:mem:testdb user=SA
+2026-04-22T15:51:11.978+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2026-04-22T15:51:12.029+05:30  INFO 56324 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-22T15:51:12.035+05:30  INFO 56324 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T15:51:12.134+05:30  WARN 56324 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-22T15:51:12.285+05:30  INFO 56324 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-04-22T15:51:12.285+05:30  INFO 56324 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-04-22T15:51:12.287+05:30  INFO 56324 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-04-22T15:51:12.291+05:30  INFO 56324 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 6 ms
+2026-04-22T15:51:12.303+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : Started IntegrationTest in 0.584 seconds (process running for 13.028)
+2026-04-22T15:51:12.357+05:30  INFO 56324 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T15:51:12.360+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2026-04-22T15:51:12.361+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="cancelIdempotent" classname="com.everquint.booking.controller.IntegrationTest" time="0.038">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-04-22T15:51:12.376+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : Starting IntegrationTest using Java 21.0.4 with PID 56324 (started by madhusriram in /Users/madhusriram/Desktop/ever-quint-assignment/meeting-room-booking)
+2026-04-22T15:51:12.376+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : No active profile set, falling back to 1 default profile: "default"
+2026-04-22T15:51:12.480+05:30  INFO 56324 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-22T15:51:12.486+05:30  INFO 56324 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 3 JPA repository interfaces.
+2026-04-22T15:51:12.538+05:30  INFO 56324 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-22T15:51:12.539+05:30  INFO 56324 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-22T15:51:12.541+05:30  INFO 56324 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-22T15:51:12.542+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2026-04-22T15:51:12.542+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Added connection conn100: url=jdbc:h2:mem:testdb user=SA
+2026-04-22T15:51:12.542+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2026-04-22T15:51:12.578+05:30  INFO 56324 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-22T15:51:12.585+05:30  INFO 56324 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T15:51:12.676+05:30  WARN 56324 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-22T15:51:12.854+05:30  INFO 56324 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-04-22T15:51:12.854+05:30  INFO 56324 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-04-22T15:51:12.856+05:30  INFO 56324 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-04-22T15:51:12.862+05:30  INFO 56324 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 7 ms
+2026-04-22T15:51:12.873+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : Started IntegrationTest in 0.51 seconds (process running for 13.599)
+2026-04-22T15:51:12.910+05:30  INFO 56324 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T15:51:12.912+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2026-04-22T15:51:12.913+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="unknownRoom" classname="com.everquint.booking.controller.IntegrationTest" time="0.018">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-04-22T15:51:12.927+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : Starting IntegrationTest using Java 21.0.4 with PID 56324 (started by madhusriram in /Users/madhusriram/Desktop/ever-quint-assignment/meeting-room-booking)
+2026-04-22T15:51:12.927+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : No active profile set, falling back to 1 default profile: "default"
+2026-04-22T15:51:13.068+05:30  INFO 56324 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-22T15:51:13.074+05:30  INFO 56324 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 3 JPA repository interfaces.
+2026-04-22T15:51:13.133+05:30  INFO 56324 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-22T15:51:13.134+05:30  INFO 56324 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-22T15:51:13.137+05:30  INFO 56324 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-22T15:51:13.138+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2026-04-22T15:51:13.138+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-12 - Added connection conn110: url=jdbc:h2:mem:testdb user=SA
+2026-04-22T15:51:13.139+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2026-04-22T15:51:13.185+05:30  INFO 56324 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-22T15:51:13.190+05:30  INFO 56324 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T15:51:13.290+05:30  WARN 56324 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-22T15:51:13.494+05:30  INFO 56324 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-04-22T15:51:13.494+05:30  INFO 56324 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-04-22T15:51:13.498+05:30  INFO 56324 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-04-22T15:51:13.503+05:30  INFO 56324 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 8 ms
+2026-04-22T15:51:13.513+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : Started IntegrationTest in 0.598 seconds (process running for 14.239)
+2026-04-22T15:51:13.530+05:30  INFO 56324 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T15:51:13.532+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2026-04-22T15:51:13.533+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="filterByCapacity" classname="com.everquint.booking.controller.IntegrationTest" time="0.027">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-04-22T15:51:13.546+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : Starting IntegrationTest using Java 21.0.4 with PID 56324 (started by madhusriram in /Users/madhusriram/Desktop/ever-quint-assignment/meeting-room-booking)
+2026-04-22T15:51:13.546+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : No active profile set, falling back to 1 default profile: "default"
+2026-04-22T15:51:13.656+05:30  INFO 56324 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-22T15:51:13.662+05:30  INFO 56324 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 3 JPA repository interfaces.
+2026-04-22T15:51:13.709+05:30  INFO 56324 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-22T15:51:13.710+05:30  INFO 56324 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-22T15:51:13.713+05:30  INFO 56324 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-22T15:51:13.713+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2026-04-22T15:51:13.714+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-13 - Added connection conn120: url=jdbc:h2:mem:testdb user=SA
+2026-04-22T15:51:13.714+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2026-04-22T15:51:13.749+05:30  INFO 56324 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-22T15:51:13.753+05:30  INFO 56324 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T15:51:13.880+05:30  WARN 56324 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-22T15:51:14.052+05:30  INFO 56324 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-04-22T15:51:14.052+05:30  INFO 56324 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-04-22T15:51:14.054+05:30  INFO 56324 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-04-22T15:51:14.057+05:30  INFO 56324 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 5 ms
+2026-04-22T15:51:14.068+05:30  INFO 56324 --- [           main] c.e.booking.controller.IntegrationTest   : Started IntegrationTest in 0.533 seconds (process running for 14.793)
+2026-04-22T15:51:14.094+05:30  INFO 56324 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T15:51:14.095+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2026-04-22T15:51:14.095+05:30  INFO 56324 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+]]></system-out>
+  </testcase>
+</testsuite>
