@@ -28,7 +28,7 @@ public class MaxProfit {
         if (dp[t] == maxProfit) solutions.add(counts.clone());
         for (int b = lastBuilding; b < 3; b++) {
             int next = t + TIME[b];
-            if (next > n) continue;
+            if (next > n || n - next == 0) continue;
             if (dp[next] == dp[t] + RATE[b] * (n - next)) {
                 counts[b]++;
                 dfs(next, counts, b);
@@ -69,5 +69,6 @@ public class MaxProfit {
         printResult(7);
         printResult(8);
         printResult(13);
+        printResult(49);
     }
 }
